@@ -5,32 +5,33 @@
 [![Version](https://img.shields.io/github/tag/LucasNoga/dathomir.svg)](https://github.com/LucasNoga/dathomir/releases)
 [![Total views](https://img.shields.io/sourcegraph/rrc/github.com/LucasNoga/dathomir.svg)](https://sourcegraph.com/github.com/LucasNoga/dathomir)
 
-Python project to clone all `gitlab` or `github` repositories using gitlab api
+Python project to clone all `gitlab` or `github` repositories using gitlab api  
+Source code analysed with [DeepSource](https://deepsource.com/)
 
 **_Version: 1.1.0_**
 
 ## Summary
 
-- [Requirements](#requirements)
-- [Get started](#get-started)
-- [How it works](#how-it-works)
-- [How to use](#how-to-use)
-  - [GitHub Account](#on-github-account)
-  - [GitLab Account](#on-gitlab-account)
-  - [Self-host Gitlab](#on-self-host-gitlab-instance)
-- [Options](#options)
-- [Unit tests](#tests)
-- [Executable](#executable)
-  - [Linux - MacOs](#linux-macos)
-  - [Windows](#windows)
-- [VS Code](#vs-code)
-- [Formatting](#formatting)
-- [Contact](#formatting)
-- [Credits](#credits)
+-   [Requirements](#requirements)
+-   [Get started](#get-started)
+-   [How it works](#how-it-works)
+-   [How to use](#how-to-use)
+    -   [GitHub Account](#on-github-account)
+    -   [GitLab Account](#on-gitlab-account)
+    -   [Self-host Gitlab](#on-self-host-gitlab-instance)
+-   [Options](#options)
+-   [Unit tests](#tests)
+-   [Executable](#executable)
+    -   [Linux - MacOs](#linux-macos)
+    -   [Windows](#windows)
+-   [VS Code](#vs-code)
+-   [Formatting](#formatting)
+-   [Contact](#formatting)
+-   [Credits](#credits)
 
 ## Requirements
 
-- [Python](https://www.python.org/) >= 3.9.5
+-   [Python](https://www.python.org/) >= 3.9.5
 
 packages to install with pip
 
@@ -75,17 +76,17 @@ After you need to setup your `Github` or `Gitlab` account
 
 ### On GitHub Account
 
-- Go to your account via: `https://github.com/login`
-- Your token ca be generate into: `https://github.com/settings/tokens`
-- Select the scope `public_repo` or `repo` (get private repo)
-- Click to generate token
-- Copy-Paste the token just generated into `<GITHUB_TOKEN>`
+-   Go to your account via: `https://github.com/login`
+-   Your token ca be generate into: `https://github.com/settings/tokens`
+-   Select the scope `public_repo` or `repo` (get private repo)
+-   Click to generate token
+-   Copy-Paste the token just generated into `<GITHUB_TOKEN>`
 
 ```json
 {
-  "type": "github",
-  "url": "https://github.com",
-  "token": "<GITHUB_TOKEN>"
+	"type": "github",
+	"url": "https://github.com",
+	"token": "<GITHUB_TOKEN>"
 }
 ```
 
@@ -93,17 +94,17 @@ See for [more details](https://docs.github.com/en/authentication/keeping-your-ac
 
 ### On GitLab Account
 
-- Go to your account via: `https://gitlab.com/users/sign_in`
-- Your token ca be generate into: `https://gitlab.com/-/profile/personal_access_tokens`
-- Select the scope `read-api` and `read-repository`
-- Click to generate token
-- Copy-Paste the token just generated into `<GITLAB_TOKEN>`
+-   Go to your account via: `https://gitlab.com/users/sign_in`
+-   Your token ca be generate into: `https://gitlab.com/-/profile/personal_access_tokens`
+-   Select the scope `read-api` and `read-repository`
+-   Click to generate token
+-   Copy-Paste the token just generated into `<GITLAB_TOKEN>`
 
 ```json
 {
-  "type": "gitlab",
-  "url": "https://gitlab.com",
-  "token": "<GITLAB_TOKEN>"
+	"type": "gitlab",
+	"url": "https://gitlab.com",
+	"token": "<GITLAB_TOKEN>"
 }
 ```
 
@@ -111,17 +112,17 @@ See for [more details](https://docs.gitlab.com/ee/user/profile/personal_access_t
 
 ### On Self-Host Gitlab instance
 
-- Your url can be `your-company.gitlab.com`
-- Your token can be generate into `https://your-company.gitlab.com/-/profile/personal_access_tokens`
-- Select the scope `read-api` and `read-repository`
-- Click to generate token
-- Copy-Paste the token just generated into `<GITLAB_TOKEN>`
+-   Your url can be `your-company.gitlab.com`
+-   Your token can be generate into `https://your-company.gitlab.com/-/profile/personal_access_tokens`
+-   Select the scope `read-api` and `read-repository`
+-   Click to generate token
+-   Copy-Paste the token just generated into `<GITLAB_TOKEN>`
 
 ```json
 {
-  "type": "gitlab",
-  "url": "https://your-company-gitlab.com",
-  "token": "<GITLAB_TOKEN>"
+	"type": "gitlab",
+	"url": "https://your-company-gitlab.com",
+	"token": "<GITLAB_TOKEN>"
 }
 ```
 
@@ -141,8 +142,8 @@ $ python3 dathomir.py --config
 
 in this mode you can
 
-- Add new config server
-- Remove config server already in config
+-   Add new config server
+-   Remove config server already in config
 
 Launch debug mode
 
@@ -229,9 +230,9 @@ The source code is validating by [pylint](https://pylint.pycqa.org/en/latest/)
 
 ## Contact
 
-- To make a pull request: https://github.com/LucasNoga/dathomir/pulls
-- To summon an issue: https://github.com/LucasNoga/dathomir/issues
-- For any specific demand by mail: [luc4snoga@gmail.com](mailto:luc4snoga@gmail.com?subject=[GitHub]%20Dathomir%20Project)
+-   To make a pull request: https://github.com/LucasNoga/dathomir/pulls
+-   To summon an issue: https://github.com/LucasNoga/dathomir/issues
+-   For any specific demand by mail: [luc4snoga@gmail.com](mailto:luc4snoga@gmail.com?subject=[GitHub]%20Dathomir%20Project)
 
 ## Credits
 

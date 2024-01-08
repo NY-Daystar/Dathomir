@@ -14,6 +14,9 @@ from .window import FrameBottom, FrameTop
 
 log = logging.getLogger('dathomir')
 
+# TODO a changer customTkinker
+# TODO: link https://www.youtube.com/watch?v=iM3kjbbKHQU&list=WL&index=25&t=8s
+
 
 class Gui(Interface):
     '''Handle gui interface'''
@@ -30,7 +33,7 @@ class Gui(Interface):
         window.iconbitmap(logo_path)
         window.config(background=BACKGROUND_COLOR)  # Background interface
 
-        self.center(window, 960, 680)  # place to the center
+        Gui.center(window, 960, 680)  # place to the center
         window.minsize(width=500, height=500)  # Min Size
 
         self.window = window
@@ -45,7 +48,8 @@ class Gui(Interface):
 
         self.window.mainloop()
 
-    def set_frame_name(self, window):
+    @staticmethod
+    def set_frame_name(window):
         '''Set TextField to set a name'''
         frame = Frame(window)
 
@@ -80,30 +84,38 @@ class Gui(Interface):
     def set_frame_token(self, window):
         '''Set frame for token'''
         # TODO - create password field or Entry
+        pass
 
     def set_frame_file_chooser(self, window):
         '''File chooser'''
         # TODO - faire un fileChooser pour choisir le folder de destination
         # TODO # https://www.geeksforgeeks.org/python-askopenfile-function-in-tkinter/?ref=lbp
-
-    def show_about(self):
+        pass
+    
+    @staticmethod
+    def show_about():
         '''Show modal for Dathomir metadata'''
         print("SHOW MODAL ABOUT")
-        # TODO
+        pass
 
     def show_servers(self):
         '''Show servers available'''
+        pass
 
     def select_server(self):
         '''Select a server'''
+        pass
 
     def add_server(self):
         '''Add a new server'''
+        pass
 
     def remove_server(self):
         '''Remove a server'''
+        pass
 
-    def center(self, window, width: int, height: int):
+    @staticmethod
+    def center(window, width: int, height: int):
         """
         centers a tkinter window
         :param win: the main window or Toplevel window to center

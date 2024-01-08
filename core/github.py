@@ -38,7 +38,7 @@ class GitHub(Git):
 
     def get_projects(self) -> List[Repository]:
         '''Get all project with your authentication'''
-        return [project for project in self.remote.get_user().get_repos()]
+        return dict(self.remote.get_user().get_repos())
 
     def clone_project(self, project: Repository, dest_folder: str):
         '''Clone the project into dest folder using git clone'''
