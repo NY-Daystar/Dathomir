@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 from pathlib import Path
 from typing import List
 
@@ -63,6 +64,11 @@ class Config:
 def load_config(filepath: Path) -> Config:
     '''Create config object loading data from config.json file'''
     config: Config = Config()
+
+    if not os.path.exists(filepath):
+            print(f'File \'{filepath}\' doesn\'t exist')
+            return config
+
     try:
         with open(filepath, mode='r', encoding='utf-8') as document:
             json_data = json.load(document)
