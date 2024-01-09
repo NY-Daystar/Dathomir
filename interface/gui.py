@@ -81,39 +81,6 @@ class Gui(Interface):
 
         frame.grid(row=1, column=1)
 
-    def set_frame_token(self, window):
-        '''Set frame for token'''
-        # TODO - create password field or Entry
-        pass
-
-    def set_frame_file_chooser(self, window):
-        '''File chooser'''
-        # TODO - faire un fileChooser pour choisir le folder de destination
-        # TODO # https://www.geeksforgeeks.org/python-askopenfile-function-in-tkinter/?ref=lbp
-        pass
-    
-    @staticmethod
-    def show_about():
-        '''Show modal for Dathomir metadata'''
-        print("SHOW MODAL ABOUT")
-        pass
-
-    def show_servers(self):
-        '''Show servers available'''
-        pass
-
-    def select_server(self):
-        '''Select a server'''
-        pass
-
-    def add_server(self):
-        '''Add a new server'''
-        pass
-
-    def remove_server(self):
-        '''Remove a server'''
-        pass
-
     @staticmethod
     def center(window, width: int, height: int):
         """
@@ -130,3 +97,40 @@ class Gui(Interface):
         y_axis = window.winfo_screenheight() // 2 - win_height // 2
         window.geometry(f"{width}x{height}+{x_axis}+{y_axis}")
         window.deiconify()
+
+    def set_frame_token(self, window):
+        '''Set frame for token'''
+        # TODO - create password field or Entry
+        print("set_frame_token")
+
+    def set_frame_file_chooser(self, window):
+        '''File chooser'''
+        # TODO - faire un fileChooser pour choisir le folder de destination
+        # TODO # https://www.geeksforgeeks.org/python-askopenfile-function-in-tkinter/?ref=lbp
+        print("set_frame_file_chooser")
+
+    @staticmethod
+    def show_about():
+        '''Show modal for Dathomir metadata'''
+        ## TODO
+        print("SHOW MODAL ABOUT")
+
+    def show_servers(self):
+        '''Show servers available'''
+        ## TODO
+        print("Show servers available")
+
+    def select_server(self):
+        '''Select a server'''
+        ## TODO
+        print("Select a server")
+
+    def add_server(self):
+        '''Add a new server'''
+        ## TODO
+        print("Add a new server")
+
+    def remove_server(self):
+        '''Remove a server'''
+        ## TODO
+        print("Remove a server")

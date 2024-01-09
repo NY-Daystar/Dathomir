@@ -29,7 +29,7 @@ class GitLab(Git):
     def __init__(self, url, token):
         super().__init__(url, token)
         # Check if it's a self-host Gitlab instance
-        self.hosted = True if self.url != "https://gitlab.com" else False
+        self.hosted = bool(self.url != "https://gitlab.com")
 
     def connect(self) -> tuple[str, Exception]:
         '''Get access to self-hosted GitLab instance

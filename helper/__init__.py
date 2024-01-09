@@ -1,4 +1,7 @@
 '''list of helpers fuuctions'''
+__all__ = ["is_arg_debug", "is_arg_console", "is_config",
+           "get_path", "get_app_path", "get_assets_path",
+           "decode_token", "detect_os"]
 
 from .console import is_arg_debug, is_arg_console, is_config
 from .path import get_path, get_app_path, get_assets_path
