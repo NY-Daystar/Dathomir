@@ -2,7 +2,8 @@
 
 from tkinter import BOTTOM, LEFT, SUNKEN, Button, Frame
 
-from config.constants import BACKGROUND_COLOR
+from config.constants import BACKGROUND_COLOR, FOREGROUND_COLOR, BG_BUTTON,\
+DEBUG_BORDER_COLOR, DEBUG_BORDER_WIDTH
 
 
 class FrameBottom:
@@ -18,7 +19,7 @@ class FrameBottom:
     @classmethod
     def click_add_config(cls):
         '''click on add config button'''
-        cls.gui.click_add_config()
+        cls.gui.add_config()
 
     @classmethod
     def click_create_backup(cls):
@@ -31,14 +32,17 @@ class FrameBottom:
         cls.gui = gui
         frame: Frame = Frame(gui.window,
                              background=BACKGROUND_COLOR,
-                             border=1,
+                             highlightbackground=DEBUG_BORDER_COLOR,
+                             highlightthickness=DEBUG_BORDER_WIDTH,
                              relief=SUNKEN
                              )
         button_about: Button = Button(frame,
                                       text="About",
                                       font=("Arial", 16),
                                       background=BACKGROUND_COLOR,
-                                      foreground='white',
+                                      foreground=FOREGROUND_COLOR,
+                                      bg=BG_BUTTON,
+                                      activebackground="black",
                                       border=1,
                                       relief=SUNKEN,
                                       command=cls.click_about
@@ -47,7 +51,9 @@ class FrameBottom:
                                            text="Add config",
                                            font=("Arial", 16),
                                            background=BACKGROUND_COLOR,
-                                           foreground='white',
+                                           foreground=FOREGROUND_COLOR,
+                                           bg=BG_BUTTON,
+                                           activebackground="black",
                                            border=1,
                                            relief=SUNKEN,
                                            command=cls.click_add_config
@@ -56,7 +62,9 @@ class FrameBottom:
                                               text="Create backup",
                                               font=("Arial", 16),
                                               background=BACKGROUND_COLOR,
-                                              foreground='white',
+                                              foreground=FOREGROUND_COLOR,
+                                              bg=BG_BUTTON,
+                                              activebackground="black",
                                               border=1,
                                               relief=SUNKEN,
                                               command=cls.click_create_backup

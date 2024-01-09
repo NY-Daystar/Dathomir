@@ -10,4 +10,8 @@ DEFAULT_DEBUG: str = 'true'
 DEFAULT_REPOSITORY: str = 'repositories'
 
 # GUI
-BACKGROUND_COLOR: str = '#221f1e'
+BACKGROUND_COLOR: str = '#ffffff'
+FOREGROUND_COLOR: str = '#000000'
+BG_BUTTON: str = 'gray50'
+DEBUG_BORDER_COLOR: str = 'red'
+DEBUG_BORDER_WIDTH: int = 3

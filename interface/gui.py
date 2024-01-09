@@ -3,7 +3,7 @@
 
 import logging
 from pathlib import Path
-from tkinter import *
+from tkinter import Tk, Frame, Radiobutton, Label, Entry, StringVar, LEFT
 
 import helper
 from config.constants import BACKGROUND_COLOR
@@ -115,6 +115,19 @@ class Gui(Interface):
         ## TODO
         print("SHOW MODAL ABOUT")
 
+    @staticmethod
+    def add_config():
+        '''Add or create config'''
+        ## TODO
+        print("ADD CONFIG")
+
+    @staticmethod
+    def create_backup():
+        '''Launch process to clone repository'''
+        ## TODO
+        print("CLONE REPOSITORY")
+
+    @staticmethod
     def show_servers(self):
         '''Show servers available'''
         ## TODO

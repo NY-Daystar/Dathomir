@@ -2,7 +2,7 @@
 
 from tkinter import SUNKEN, Frame, Label
 
-from config.constants import BACKGROUND_COLOR
+from config.constants import BACKGROUND_COLOR, FOREGROUND_COLOR
 
 
 class FrameTop:
@@ -17,7 +17,7 @@ class FrameTop:
                                    text="HORUS",
                                    font=("Arial", 20),
                                    background=BACKGROUND_COLOR,
-                                   foreground='white'
+                                   foreground=FOREGROUND_COLOR
                                    )
         label_title.pack()
 
@@ -25,7 +25,7 @@ class FrameTop:
                                       text="Backup manager for Github and Gitlab repositories",
                                       font=("Courrier", 12),
                                       background=BACKGROUND_COLOR,
-                                      foreground='white'
+                                      foreground=FOREGROUND_COLOR
                                       )
         label_subtitle.pack()
         frame.pack()
