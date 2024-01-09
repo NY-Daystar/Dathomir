@@ -3,7 +3,7 @@
 from tkinter import BOTTOM, LEFT, SUNKEN, Button, Frame
 
 from config.constants import BACKGROUND_COLOR, FOREGROUND_COLOR, BG_BUTTON,\
-DEBUG_BORDER_COLOR, DEBUG_BORDER_WIDTH
+    DEBUG_BORDER_COLOR, DEBUG_BORDER_WIDTH
 
 
 class FrameBottom:

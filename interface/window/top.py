@@ -20,9 +20,10 @@ class FrameTop:
                                    foreground=FOREGROUND_COLOR
                                    )
         label_title.pack()
-
+        label_text: str = "Backup manager for Github and \
+Gitlab repositories"
         label_subtitle: Label = Label(frame,
-                                      text="Backup manager for Github and Gitlab repositories",
+                                      text=label_text,
                                       font=("Courrier", 12),
                                       background=BACKGROUND_COLOR,
                                       foreground=FOREGROUND_COLOR

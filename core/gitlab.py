@@ -51,8 +51,7 @@ class GitLab(Git):
         '''Get all project with your authentication'''
         if self.hosted:
             return self.remote.projects.list(all=True)
-        else:
-            return self.remote.projects.list(owned=True)
+        return self.remote.projects.list(owned=True)
 
     def clone_project(self, project: Project, dest_folder: str):
         '''Clone the project into dest folder using git clone'''

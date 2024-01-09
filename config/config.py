@@ -66,8 +66,8 @@ def load_config(filepath: Path) -> Config:
     config: Config = Config()
 
     if not os.path.exists(filepath):
-            print(f'File \'{filepath}\' doesn\'t exist')
-            return config
+        print(f'File \'{filepath}\' doesn\'t exist')
+        return config
 
     try:
         with open(filepath, mode='r', encoding='utf-8') as document:

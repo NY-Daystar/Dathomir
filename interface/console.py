@@ -102,8 +102,8 @@ class Console(Interface):
                 validate=lambda _, x: len(x) >= 3
             ),
         ]
-        loop_ok: int = 1
-        while loop_ok:
+        loop: int = 1
+        while loop:
             answers = inquirer.prompt(questions)
             print("List of your answers")
             for key, value in answers.items():
@@ -116,10 +116,10 @@ class Console(Interface):
                     choices=[("Yes", '1'), ('No', '0')]
                 ),
             ]
-
+            print('ttt')
             answer = inquirer.prompt(confirmations)['confirmation']
             if int(answer) == 1:
-                break
+                loop = 0
             else:
                 print("Retry to add server git")
 

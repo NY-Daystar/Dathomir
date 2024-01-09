@@ -41,6 +41,7 @@ class Gui(Interface):
         # Create several frames
         FrameTop.create(self)
 
+        # TODO
         # self.set_frame_name(gui)
         # self.set_frame_type(gui)
 
@@ -98,52 +99,55 @@ class Gui(Interface):
         window.geometry(f"{width}x{height}+{x_axis}+{y_axis}")
         window.deiconify()
 
-    def set_frame_token(self, window):
-        '''Set frame for token'''
-        # TODO - create password field or Entry
-        print("set_frame_token")
+#     def set_frame_token(self, window):
+#         '''Set frame for token'''
+# TODO - create password field or Entry
+#         print("set_frame_token")
 
-    def set_frame_file_chooser(self, window):
-        '''File chooser'''
-        # TODO - faire un fileChooser pour choisir le folder de destination
-        # TODO # https://www.geeksforgeeks.org/python-askopenfile-function-in-tkinter/?ref=lbp
-        print("set_frame_file_chooser")
+# TODO - faire un fileChooser pour choisir le folder de destination
+# TODO: https://www.geeksforgeeks.org/python-askopenfile-function-in-tkinter/?ref=lbp
+#     def set_frame_file_chooser(self, window):
+#         '''File chooser'''
+#         print("set_frame_file_chooser")
 
     @staticmethod
     def show_about():
         '''Show modal for Dathomir metadata'''
-        ## TODO
+        # TODO
         print("SHOW MODAL ABOUT")
 
     @staticmethod
     def add_config():
         '''Add or create config'''
-        ## TODO
+        # TODO
         print("ADD CONFIG")
 
     @staticmethod
     def create_backup():
         '''Launch process to clone repository'''
-        ## TODO
+        # TODO
         print("CLONE REPOSITORY")
 
     @staticmethod
-    def show_servers(self):
+    def show_servers():
         '''Show servers available'''
-        ## TODO
+        # TODO
         print("Show servers available")
 
-    def select_server(self):
+    @staticmethod
+    def select_server():
         '''Select a server'''
-        ## TODO
+        # TODO
         print("Select a server")
 
-    def add_server(self):
+    @staticmethod
+    def add_server():
         '''Add a new server'''
-        ## TODO
+        # TODO
         print("Add a new server")
 
-    def remove_server(self):
+    @staticmethod
+    def remove_server():
         '''Remove a server'''
-        ## TODO
+        # TODO
         print("Remove a server")

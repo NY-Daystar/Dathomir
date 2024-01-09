@@ -29,5 +29,6 @@ class GitFactory:
         log.info("Launch %s cloner", git_type)
         if git_type == GitServer.GITHUB:
             return GitHub(url, token)
-        elif git_type == GitServer.GITLAB:
+        if git_type == GitServer.GITLAB:
             return GitLab(url, token)
+        return None
